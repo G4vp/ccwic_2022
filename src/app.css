@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Oxygen, sans-serif;
+}
+
+.btn--primary {
+    background-image: linear-gradient(to right, #9D50BB 0%, #6E48AA  51%, #9D50BB  100%)
+}
+
+.btn--primary {
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 45px;
+    display: block;
+}
+
+.btn--primary:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn--mobile{
+    width: 80%;
+}
+
+.tab-pane.active .tab-pane-header {
+    padding:2rem;
+    background-color:#e2e2e2;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    margin-bottom:1rem;
+  }
+  
+.tab-pane:first-child .tab-pane-header {
+border-top-left-radius: 0;
+}

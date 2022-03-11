@@ -1,12 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { Col, Row, Container } from 'react-bootstrap';
+import logo from "../Images/logo.png";
 
-
-function Home() {
+const Home = () => {
     return (
-        <div>
-            Welcome to CCWiC!
+        <div className="Home">
+            <Container>
+                <Row>
+                    <Col xs="auto" className='d-flex justify-content-left'>
+                    <img
+                        alt=""
+                        src={logo}
+                        height="30%"
+                        className="img-responsive"
+                    />
+                    {""}
+                    </Col>
+                    <Col md="auto" className='d-flex justify-content-center'>Caribbean Celebration</Col>
+                </Row>
+            </Container>
         </div>
+        
     );
 }
 
