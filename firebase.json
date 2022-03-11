@@ -1,23 +1,16 @@
 {
   "hosting": {
-<<<<<<< HEAD
-    "public": "public",
-=======
     "public": "build",
->>>>>>> old-state
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-<<<<<<< HEAD
-=======
     ],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
       }
->>>>>>> old-state
     ]
   }
 }
