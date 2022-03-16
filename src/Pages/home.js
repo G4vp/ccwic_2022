@@ -3,6 +3,11 @@ import { Col, Row, Container, Button } from 'react-bootstrap';
 
 import logo from "../Images/logo.png";
 
+import microsoft from "../Images/microsoft.png";
+import acm from "../Images/acm.png";
+import CAHSI from "../Images/CAHSI.png";
+import l3harris from "../Images/l3harris.png";
+
 const SCREEN_WIDTH = window.innerWidth; // get current width
 const SCALE = 1349; // constant
 
@@ -19,7 +24,7 @@ const Home = () => {
     return (
 
         <Container fluid>
-             <Row style={{padding:"50px"}}>
+             <Row className="HomepageBrand" style={{padding:"50px"}}>
                 <Col sm={4}>
                     <img
                         className='img-responsive'
@@ -51,7 +56,7 @@ const Home = () => {
             </Row>
             <br/>
             <br/>
-            <Row style={{backgroundImage: "linear-gradient(to right, #9D50BB 0%, #6E48AA  51%, #9D50BB  100%)", backgroundSize: "200% auto", padding: "100px", color: "white"}}>
+            <Row className="What is CCWiC" style={{backgroundImage: "linear-gradient(to right, #9D50BB 0%, #6E48AA  51%, #9D50BB  100%)", backgroundSize: "200% auto", padding: "100px", color: "white"}}>
                 <Col sm={4} className="my-auto">
                     <div style={{fontSize: "60px", fontWeight:"bold", fontFamily: "'Roboto', sans-serif"}}>
                     What is CCWiC?
@@ -66,15 +71,73 @@ const Home = () => {
                         all centered on empowering participants for professional growth and career preparation.
                         <br/>
                         <br/>
-                        Women will participate in interactive workshops and technical sessions. The technical areas that students 
-                        will be exposed to are: Machine Learning and Artificial Intelligence, Cybersecurity, and Internet of Things. 
-                        We want to increase participants' confidence while promoting and providing a better understanding of 
-                        computing careers.
+                        CCWiC is part of the ACM Celebrations of Women in Computing of the Association for Computing Machinery 
+                        Council on Women in Computing (ACM-W). CCWIC is dedicated to providing a harassment­-free conference 
+                        experience and implements the ACM anti­discrimination statement.
                     </div>
+                    <br/>
+                    <Button variant="light" href='https://www.acm.org/about-acm/policy-against-harassment' style={{borderRadius: "45px"}}>
+                        Learn More About this Policy
+                    </Button>
                 </Col>
             </Row>
-            <Row>
-                Something
+            <Row className="Sponsors justify-content-center" style={{padding: "100px"}}>
+                    <div style={{fontSize: "60px", fontWeight:"bold", fontFamily: "'Roboto', sans-serif", textAlign:"center"}}>
+                    CCWiC Sponsors
+                    </div>
+                    
+                <Col  xs={12} sm={6} md={6} xl={3} className="my-auto"> 
+                    <img
+                        src={CAHSI}
+                        alt="Logo"
+                        style={{
+                            width:200,
+                            margin: "auto",  
+                            marginTop: "20px",
+                            display: "block"
+                        }}
+                        
+                    />
+                </Col>
+                <Col xs={12} sm={6} md={6} xl={3} className="my-auto"> 
+                    <img
+                        src={microsoft}
+                        alt="Logo"
+                        style={{
+                            width:200,
+                            margin: "auto", 
+                            marginTop: "20px", 
+                            display: "block" 
+                        }}
+                        
+                    />
+                </Col>
+                <Col xs={12} sm={6} md={6} xl={3} className="my-auto"> 
+                    <img
+                        src={l3harris}
+                        alt="Logo"
+                        style={{
+                            width:200,
+                            margin: "auto",  
+                            marginTop: "20px",
+                            display: "block" 
+                        }}
+                        
+                    />
+                </Col>
+                <Col xs={12} sm={6} md={6} xl={3} className="my-auto"> 
+                    <img
+                        src={acm}
+                        alt="Logo"
+                        style={{
+                            width:200,
+                            margin: "auto", 
+                            marginTop: "20px", 
+                            display: "block" 
+                        }}
+                        
+                    />
+                </Col>
             </Row>
         </Container>
 

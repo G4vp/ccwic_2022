@@ -9,7 +9,7 @@ import Home from './Pages/home.js'
 import Schedule from './Pages/schedule.js'
 import Speakers from './Pages/speakers.js'
 import CCWiCNavbar from './Components/CCWiCNavbar.jsx'
-
+import CCWiCFooter from './Components/CCWiCFooter.jsx'
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
                 <Route path="/Schedule" element={<Schedule/>}/>
                 <Route path="/Speakers" element={<Speakers/>}/>
             </Routes>
+            <CCWiCFooter/>
         </BrowserRouter>
     )
 }
